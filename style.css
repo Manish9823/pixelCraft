@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: white;
+}
+header {
+    background: wheat;
+    font-size: 3.5vw;
+    line-height: 4vw;
+    padding-left: 2%;
+    margin-bottom: 1.5vw;
+    font-family: monospace;
+    font-weight: bold;
+    transition: 0.5s;
+}
+header:hover {
+    transform: scaleY(1.1);
+}
+header span {
+    font-size: 0.7em;
+    font-family: cursive;
+}
+.container {
+    display: block;
+}
+.inter_con {
+    width: 95vw;
+    height: 100vh;
+    left: -10000px;
+    position: absolute;
+    background-color: white;
+    z-index: 6;
+    scroll-behavior: none;
+    transition: all 1s;
+}
+.close {
+    position: absolute;
+    font-size: 40px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    left: 97%;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+    transition: 0.2s;
+}
+.close:hover {
+    transform: scale(0.9);
+    color: red;
+}
+.con {
+    width: 91vw;
+    display: flex;
+    border: 3px solid black;
+}
+.div {
+    border-right: 3px solid black;
+    overflow: hidden;
+}
+#realImage {
+    display: inline-flex;
+    width: 40vw;
+    height: auto;
+    object-fit: cover;
+}
+.div1 {
+    overflow: hidden;
+}
+#canvas1 {
+    object-fit: cover;
+}
+
+.image-con {
+    width: 100vw;
+    height: auto;
+    margin: 3%;
+    margin-top: 4%;
+    position: relative;
+    display: flex-box;
+    justify-content: center;
+    visibility: visible;
+    overflow: hidden;
+}
+div img {
+    width: 20vw;
+    height: 20vw;
+    margin: 0.1%;
+    transition: 0.3s;
+    border: 0.5px solid black;
+}
+.imageChoose:hover {
+    transform: scale(0.95);
+}
+.imageInput {
+    overflow: hidden;
+    margin-top: 5vw;
+    display: inline-flexbox;
+    width: 20vw;
+    height: 20vw;
+    border: 0.5px dashed #444;
+    text-align: center;
+    align-items: center;
+}
+#imageInputType {
+    outline: none;
+    font-size: 5vw;
+    background: rgb(185, 185, 185);
+    color: red;
+}
+.imageInput span {
+    position: absolute;
+    z-index: 2;
+    left: 2.5vw;
+    display: flex;
+    margin-top: 1vw;
+    font-size: 3.5vw;
+}
+.tools-container button {
+    margin: 2vw;
+    padding: 0.5vw;
+    font-size: 5vw;
+    line-height: 6vw;
+}
+.tools-container input {
+    margin: 2vw;
+    padding: 0.5vw;
+    font-size: 5vw;
+    line-height: 6vw;
+}
+
+@media only screen and (max-width: 360px) {
+    header {
+        font-size: 6vw;
+        line-height: 7vw;
+    }
+}
