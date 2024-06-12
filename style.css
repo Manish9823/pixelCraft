@@ -15,11 +15,14 @@ header {
     font-family: monospace;
     font-weight: bold;
     transition: 0.5s;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1%;
 }
 header:hover {
     transform: scaleY(1.1);
 }
-header span {
+.sub-heading {
     font-size: 0.7em;
     font-family: cursive;
 }
